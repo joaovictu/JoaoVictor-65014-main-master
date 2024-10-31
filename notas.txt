@@ -1,0 +1,36 @@
+                                
+npm install --save-dev typescript @types/node @types/pg @types/express ts-node
+npm install pg express
+npm install @types/pg --save-dev
+npm install pg
+npm install Pool
+npm install express typescript ts-node @types/node @types/express
+npm i --save-dev @types/node
+
+
+                                
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "user1", "email": "user1@example.com"}'
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "user2", "email": "user2@example.com"}'
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "user3", "email": "user3@example.com"}'
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "user4", "email": "user4@example.com"}'
+
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "user1", "email": "user1@example.com"}'
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "user2", "email": "user2@example.com"}'
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "user3", "email": "user3@example.com"}'
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "user4", "email": "user4@example.com"}'
+
+
+                              
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "u1", "email": "user1@example.com"}'
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "u2", "email": "user2@example.com"}'
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "u3", "email": "user3@example.com"}'
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name": "u4", "email": "user4@example.com"}'
+
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "u1", "email": "user1@example.com"}'
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "u2", "email": "user2@example.com"}'
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "u3", "email": "user3@example.com"}'
+Invoke-WebRequest -Uri "http://localhost:3000/users" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"name": "u4", "email": "user4@example.com"}'
+
+
+--Execução do servidor--
+npx ts-node src/server.ts
